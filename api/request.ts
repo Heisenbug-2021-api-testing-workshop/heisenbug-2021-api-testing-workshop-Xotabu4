@@ -31,7 +31,7 @@ export class JsonRequestWithValidation extends JsonRequest {
                     (response) => {
                         const stepName = `[${response.statusCode}] ${this?.options?.method ?? 'GET'} ${this?.options?.url} | ${response?.timings?.phases?.total}ms`
 
-                        allure.createStep(stepName, () => {
+                        const step = allure.createStep(stepName, () => {
 
                             if (this?.options?.json) {
                                 allure.createAttachment(`JSON Request Body`, JSON.stringify(this?.options?.json, null, 2), 'application/json' as any)
@@ -42,6 +42,8 @@ export class JsonRequestWithValidation extends JsonRequest {
                             }
 
                         })
+
+                        step()
 
                         return response
                     }
