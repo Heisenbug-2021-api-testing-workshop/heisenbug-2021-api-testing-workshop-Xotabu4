@@ -1,0 +1,32 @@
+{
+  "name": "heisenbug-2021-api-testing-workshop-xotabu4",
+  "version": "1.0.0",
+  "description": "Heisenbug api testing workshop",
+  "scripts": {
+    "pretest": "openapi-typescript http://93.126.97.71:10080/api/swagger.json --output ./.temp/types.ts",
+    "test": "mocha --reporter mocha-multi-reporters --reporter-options configFile=reporterConfig.json"
+  },
+  "dependencies": {
+    "@types/mocha": "5.2.7",
+    "@types/node": "12.12.2",
+    "mocha": "^8.0.0",
+    "typescript": "4.2.3",
+    "ts-node": "^9.1.1",
+    "got": "^11.8.2",
+    "http-req-builder": "^1.2.1",
+    "openapi-typescript": "^3.2.0",
+    "response-openapi-validator": "^1.1.0",
+    "mocha-multi-reporters": "1.5.1",
+    "allure-mocha": "2.0.0-beta.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heisenbug-2021-api-testing-workshop/heisenbug-2021-api-testing-workshop-Xotabu4.git"
+  },
+  "author": "Oleksandr Khotemskyi <xotabu4@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Heisenbug-2021-api-testing-workshop/heisenbug-2021-api-testing-workshop-Xotabu4/issues"
+  },
+  "homepage": "https://github.com/Heisenbug-2021-api-testing-workshop/heisenbug-2021-api-testing-workshop-Xotabu4#readme"
+}

@@ -1,3 +1,6 @@
+temp/
+allure-results/
+
 # Logs
 logs
 *.log
