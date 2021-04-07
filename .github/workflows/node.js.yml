@@ -15,7 +15,7 @@ jobs:
           node-version: 15.x
       - run: npm cit
       - name: Send results and generate allure report
-        uses: Xotabu4/send-to-allure-server-action@v1
+        uses: Xotabu4/send-to-allure-server-action@1
         if: ${{ always() }}
         with:
           allure-server-url: 'http://93.126.97.71:5001/'
