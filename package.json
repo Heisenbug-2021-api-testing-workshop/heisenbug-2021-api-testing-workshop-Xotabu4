@@ -4,7 +4,7 @@
   "description": "Api testing project",
   "scripts": {
     "pretest": "openapi-typescript http://93.126.97.71:10080/api/swagger.json --output ./.temp/types.ts",
-    "test": "mocha --reporter mocha-multi-reporters --reporter-options configFile=reporeterConfig.json"
+    "test": "mocha --reporter mocha-multi-reporters --reporter-options configFile=reporterConfig.json"
   },
   "repository": {
     "type": "git",
