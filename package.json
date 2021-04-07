@@ -1,0 +1,29 @@
+{
+  "name": "heisenbug-2021-api-testing-workshop-xotabu4",
+  "version": "1.0.0",
+  "description": "Api testing project",
+  "scripts": {
+    "pretest": "openapi-typescript http://93.126.97.71:10080/api/swagger.json --output ./.temp/types.ts",
+    "test": "mocha --require ts-node/register ./test/**/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heisenbug-2021-api-testing-workshop/heisenbug-2021-api-testing-workshop-Xotabu4.git"
+  },
+  "author": "Oleksandr Khotemskyi <xotabu4@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Heisenbug-2021-api-testing-workshop/heisenbug-2021-api-testing-workshop-Xotabu4/issues"
+  },
+  "homepage": "https://github.com/Heisenbug-2021-api-testing-workshop/heisenbug-2021-api-testing-workshop-Xotabu4#readme",
+  "dependencies": {
+    "typescript": "^4.2.3",
+    "mocha": "^8.3.2",
+    "ts-node": "^9.1.1",
+    "got": "^11.8.2",
+    "http-req-builder": "^1.2.1",
+    "@types/mocha": "*",
+    "@types/node": "^14.14.37",
+    "openapi-typescript": "^3.2.1"
+  }
+}
